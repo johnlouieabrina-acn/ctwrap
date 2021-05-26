@@ -37,4 +37,4 @@ jobs:
         python -m pip install sphinx-rtd-theme
     - name: Run and build the html file
       run: |
-        python -m  make html
+        python make html
