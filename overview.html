@@ -56,17 +56,17 @@ is that the code is <cite>organized</cite>. Specifically:</p>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">run()</span></code> method runs a single simulation and returns a dictionary containing the output object.</p></li>
 </ul>
 <p>The structure of a simulation module is illustrated by the following <em>minimal example</em>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Simulation module illustrating a minimal ctwrap example&quot;&quot;&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;TEST Simulation module illustrating a minimal ctwrap example&quot;&quot;&quot;</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
 
 <span class="k">def</span> <span class="nf">defaults</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;Returns dictionary containing default arguments&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;TEST Returns dictionary containing default arguments&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
 
 
 <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">foo</span><span class="o">=</span><span class="mf">.2</span><span class="p">,</span> <span class="n">bar</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;This method &#39;sleeps&#39; for the specified duration&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;TEST This method &#39;sleeps&#39; for the specified duration&quot;&quot;&quot;</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;    - `minimal`: sleeping for </span><span class="si">{}</span><span class="s1"> * </span><span class="si">{}</span><span class="s1"> = </span><span class="si">{}</span><span class="s1"> seconds ...&#39;</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">,</span> <span class="n">foo</span> <span class="o">*</span> <span class="n">bar</span><span class="p">))</span>
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">foo</span> <span class="o">*</span> <span class="n">bar</span><span class="p">)</span>
