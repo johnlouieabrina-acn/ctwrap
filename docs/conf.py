@@ -16,11 +16,12 @@
 import datetime
 
 import ctwrap
+
 # -- Project information -----------------------------------------------------
 
 year = datetime.date.today().year
 project = 'ctwrap'
-author = 'JJJ'
+author = ctwrap.__author__
 copyright = '2018-{}, {}'.format(year-2000, author)
 
 # The short X.Y version
@@ -72,7 +73,7 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'github_user': 'microcombustion',
+    'github_user': 'johnlouieabrina-acn',
     'github_repo': 'ctwrap',
     'github_banner': False,
     'github_button': True,
