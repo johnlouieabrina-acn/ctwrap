@@ -46,7 +46,7 @@ jobs:
         git commit -m "Update documentation" -a || true
         # The above command will fail if no changes were present, so we ignore
         # that.
-    - if: github.repository == 'microcombustion/ctwrap'
+    - if: github.repository == 'johnlouieabrina-acn/ctwrap'
       name: Push changes
       uses: ad-m/github-push-action@master
       with:
