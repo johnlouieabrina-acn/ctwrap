@@ -1,0 +1,14 @@
+# default parameters for the `equilibrium` module
+initial:
+  T: 300. kelvin # temperature
+  P: 1. atmosphere # pressure
+  phi: .55 # equivalence ratio
+phases:
+  gas: # gas phase
+    mechanism: gri30.yaml
+    moles: 1.
+    fuel: CH4
+    oxidizer: O2:1.0, N2:3.76
+  other: null
+equilibrate:
+  mode: HP

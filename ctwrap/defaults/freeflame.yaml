@@ -1,0 +1,17 @@
+# default parameters for the `freeflame` module
+upstream:
+  T: 300. kelvin # temperature
+  P: 1. atmosphere # pressure
+  phi: .55 # equivalence ratio
+  fuel: H2
+  oxidizer: O2:1.,AR:5
+model:
+  mechanism: h2o2.yaml
+  transport: mix
+domain:
+  width: 30 millimeter # domain width
+settings:
+  loglevel: 0 # amount of diagnostic output (0 to 8)
+  ratio: 3
+  slope: 0.06
+  curve: 0.12
