@@ -20,7 +20,7 @@ import datetime
 
 year = datetime.date.today().year
 project = 'ctwrap'
-author = ctwrap.__author__
+author = 'JJJ'
 copyright = '2018-{}, {}'.format(year-2000, author)
 
 # The short X.Y version
