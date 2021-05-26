@@ -1,14 +1,14 @@
-"""Simulation module illustrating a minimal ctwrap example"""
+"""TEST Simulation module illustrating a minimal ctwrap example"""
 import time
 
 
 def defaults():
-    """Returns dictionary containing default arguments"""
+    """TEST Returns dictionary containing default arguments"""
     return {'foo': 0.2, 'bar': 1}
 
 
 def run(foo=.2, bar=1):
-    """This method 'sleeps' for the specified duration"""
+    """TEST This method 'sleeps' for the specified duration"""
     msg = '    - `minimal`: sleeping for {} * {} = {} seconds ...'
     print(msg.format(foo, bar, foo * bar))
     time.sleep(foo * bar)
